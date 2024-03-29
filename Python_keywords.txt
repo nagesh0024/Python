@@ -1,0 +1,85 @@
+Q1. Explain the significance of Python keywords and provide examples of five keywords.
+
+Python keywords are reserved words that have predefined meanings and functionalities within the Python programming language. These keywords cannot be used as identifiers because they are already reserved for specific purposes. Understanding Python keywords is crucial for writing clear and efficient code as they often denote control flow, data structures, and other fundamental aspects of the language.
+
+Example of Python keywords
+1. and, or, not: Used for logical operations in Python. 'and' returns True if both operands are true, 'or' returns True if at least one operand is true, and 'not' returns the negation of the operand.
+2. from: Used in combination with import to import specific functions or objects from a module.
+3. class: Used to define a new class in Python. Classes are used to create objects with properties and methods.
+4. def: Used to define functions in Python. Functions are blocks of reusable code that can be called with different arguments.
+5. return: Used to exit a function and return a value to the caller.
+
+_____________________________________________________________________________________________________________________________________________________
+
+Q2. Describe the rules for defining identifiers in Python and provide an example.
+
+Rules for defining identifiers in Python:
+
+1. Valid Characters: Identifiers can consist of letters (both uppercase and lowercase), digits, and underscores (). They must start with a letter (a-z, A-Z) or an underscore (). Identifiers are case-sensitive.
+2. Reserved Words: Identifiers cannot be the same as Python keywords or reserved words.
+3. No Special Characters: Identifiers cannot contain special characters such as !, @, #, $, %, etc.
+4. No Spaces: Identifiers cannot contain spaces.
+5. Conventions: It's common in Python to use descriptive names for identifiers to make the code more readable. For multi-word identifiers, you can use underscores to separate words (snake_case) or capitalize the first letter of each word except the first one (CamelCase).
+
+example:
+    # Valid identifiers
+    my_variable = 42
+    my_function = lambda x: x * 2
+    MyClass = SomeClass()
+
+    # Invalid identifiers
+    2nd_variable = 10  # Identifiers cannot start with a digit
+    my-variable = 5    # Hyphens are not allowed in identifiers
+    for = 20           # 'for' is a reserved keyword
+
+_____________________________________________________________________________________________________________________________________________________
+    
+Q3. What are comments in Python, and why are they usefull Provide an example.
+
+In Python, comments are pieces of text within the code that are ignored by the interpreter during execution. They are used to add explanatory notes, documentation, or to temporarily disable code segments. Comments in Python are preceded by the hash symbol (#) and can span across multiple lines if needed.
+
+Comments are useful for several reasons:
+1. Documentation: Comments help in documenting the code, making it easier for others (including your future self) to understand the purpose of different parts of the code.
+2. Clarification: They provide additional context or clarification about why certain code decisions were made or how specific sections of the code work.
+3. Debugging: Comments can be used to temporarily disable certain sections of code for debugging purposes without actually deleting them. This allows for easy testing of alternative approaches.
+4. Readability: Well-commented code is more readable and maintainable. It helps other developers to quickly grasp the functionality and logic of the code.
+
+Example:
+    # This is a single-line comment
+
+    # Variables to store the user's name and age
+    name = "John"
+    age = 30
+
+_____________________________________________________________________________________________________________________________________________________
+    
+Q4. Why is proper indentation important in Python?
+
+Proper indentation is crucial in Python because it is used to define the structure and nesting of code blocks. Unlike many other programming languages that use braces ({}) or keywords (e.g., begin/end) to denote blocks of code, Python uses indentation to indicate where blocks begin and end. Here's why proper indentation is important in Python:
+
+1. Readability: Proper indentation enhances the readability of code by visually indicating the structure of the code. It makes it easier for programmers to understand the flow and hierarchy of control structures like loops, conditionals, and function definitions.
+2. Syntax Requirement: In Python, incorrect indentation leads to syntax errors. Python interpreter relies on consistent indentation to determine the beginning and end of code blocks. Incorrect indentation can result in code that doesn't run or behaves unexpectedly.
+3. Consistency: Adhering to a consistent indentation style throughout the codebase ensures uniformity and makes collaboration among developers more manageable. It establishes a coding standard that improves maintainability and reduces the likelihood of errors.
+4. Code Blocks: Proper indentation delineates nested code blocks, such as loops and conditionals, making it clear which statements are part of the block and which are outside. This clarity helps in understanding the logical structure of the program.
+5. Debugging: Indentation can assist in debugging by visually identifying the scope of variables and the flow of execution. Proper indentation can make it easier to spot misplaced or redundant code blocks.
+6. Pythonic Style: Proper indentation is a fundamental aspect of Pythonic style, which emphasizes writing code that is clear, concise, and follows the conventions of the Python community. Adhering to Pythonic style improves code maintainability and makes it more idiomatic for Python developers.
+
+_____________________________________________________________________________________________________________________________________________________
+
+Q5. What happens if indentation is incorrect in Python?
+
+In Python, indentation errors occur when the indentation of lines of code does not follow the expected structure. Indentation is crucial in Python because it determines the grouping of statements into code blocks, such as loops, conditionals, and function definitions. If the indentation is incorrect, Python will raise an "IndentationError" exception.
+
+If indentation is incorrect in Python:
+1. IndentationError: When Python encounters incorrect indentation, it raises an "IndentationError" exception. This error indicates that the interpreter expected a different level of indentation but found something else.
+2. Syntax Highlighting: Many code editors and IDEs highlight indentation to help identify errors visually. Incorrect indentation might be visually indicated in the editor, making it easier for programmers to spot and correct the mistake before running the code.
+3. Code Execution Failure: If the code with incorrect indentation is executed, Python will raise an IndentationError and halt the execution of the program. The error message typically includes information about the location of the indentation error and what was expected.
+4. Debugging: Indentation errors can be detected during the debugging process. Developers can use debugging tools to identify the exact line causing the indentation error and correct it accordingly.
+
+_____________________________________________________________________________________________________________________________________________________
+
+Q6.Differentiate between expression and statement in Python with examples.
+
+The difference between expressions and statements is that expressions always evaluate to a value, whereas statements may or may not produce a value.
+Expressions are used to compute values, whereas statements are used to perform actions or control the flow of the program.
+While expressions can be part of statements, statements cannot be part of expressions.
